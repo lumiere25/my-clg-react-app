@@ -1,0 +1,14 @@
+.footer_container {
+  border: 5px solid rgb(235, 215, 221);
+  background-color: rgb(214, 164, 177);
+  width: 100%;
+  padding-top: 90px;
+  
+}
+
+.desc {
+ margin-left: 35px;
+ color: rgb(253, 237, 237);
+ 
+
+}
