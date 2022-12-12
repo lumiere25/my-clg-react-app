@@ -1,0 +1,19 @@
+
+.main_info_container {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(213, 168, 179);
+ 
+}
+
+.main_info_container h1 {
+  font-size: 30px;
+  margin-top: 30px;
+  color:rgb(197, 133, 149);
+}
+
+.main_info_container a {
+  text-decoration: none;
+  color: rgb(124, 28, 104);
+}

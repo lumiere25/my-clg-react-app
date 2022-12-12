@@ -1,7 +1,6 @@
 
 .header {
   position: relative;
-  bottom: 680px;
   border: 5px solid rgb(235, 215, 221);
   padding: 10px;
   margin: 50px;
@@ -20,15 +19,18 @@
   padding: 0;
   margin: 0;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .header li {
   margin: 0.1rem;
   width: 5rem;
+  justify-content: space-between;
 }
 
 .header a {
-  color:rgb(247, 247, 247);
+  color:rgb(62, 77, 150);
+  font-size: 19px;
   text-decoration: none;
 }
+

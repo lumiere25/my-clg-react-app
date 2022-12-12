@@ -1,7 +1,6 @@
 import { useState } from "react";
-import Styles from "../form/contactFormMessaging.module.css";
-import ContactFormMessaging from "../form/ContactFormMessaging";
-
+import Styles from "../components/form/contactFormMessaging.module.css";
+import ContactFormMessaging from "../components/form/ContactFormMessaging";
 
 
 const EnquiryForm = () => {
@@ -32,7 +31,8 @@ const options = [
 
 
   return (
-    <form className={Styles["form_container"]}>
+   <form className={Styles["form_container"]}>
+
       <div className={Styles["form_content"]}>
       <label className={Styles["form_label_1"]}>
       <div className={Styles["text_name"]}>

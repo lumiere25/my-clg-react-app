@@ -7,6 +7,11 @@
 
 }
 
+.info {
+  margin-right: 80px;
+}
+
+
 .form_content {
   display: flex;
   border-radius: 15px;
@@ -15,7 +20,7 @@
   width: 30%; 
   align-items: center;
   margin: 15px;
-  margin-left: 35%;
+  margin-left: 33%;
   border: 2px solid rgb(107, 86, 132);
   background-color: rgb(214, 164, 177);
  }
@@ -62,9 +67,9 @@
    border: 2px solid rgb(107, 86, 132);
    border-radius: 7px;
    background-color: rgb(214, 164, 177);
-   padding: 10px 21px;
-   margin-left: 63px;
-   margin-top: 10px;
+   padding: 10px 19px;;
+   margin-left: 10px;
+   margin-top: 5px;
  }
 
  .button:hover {
