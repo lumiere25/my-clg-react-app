@@ -1,0 +1,29 @@
+{
+  "food": [
+   {
+ 
+      "title": "pastichio",
+      "description": "It is yummy deliciousness",
+      "image": "https://st3.depositphotos.com/29384342/34137/i/600/depositphotos_341378956-stock-photo-different-food-selective-focus.jpg",
+      "rating": 10,
+      "haveTried": true
+  },
+  {
+  
+      "title": "maccas",
+      "description": "I'm loving it",
+      "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80",
+      "rating": 8,
+      "haveTried": true
+  },
+  {
+ 
+        "title": "spaghetti",
+        "description": "Spagbowl and sauce, need I say more?",
+        "image": "https://images.unsplash.com/photo-1622973536968-3ead9e780960?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+       
+        "rating": 0,
+        "haveTried": false
+     }
+   ]
+}

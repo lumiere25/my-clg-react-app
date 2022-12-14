@@ -1,8 +1,8 @@
 import React from "react";
-import { useMatch, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Projects = () => {
-  const { url } = useMatch();
+ 
 
   return (
     <section>
@@ -10,10 +10,10 @@ const Projects = () => {
       <p>I'll be documenting all my small projects here</p>
       <ul>
         <li>
-          <NavLink to={`${url}/todo-app`}>Todo List</NavLink>
+          <NavLink to={`/todo-app`}>Todo List</NavLink>
         </li>
         <li>
-          <NavLink to={`${url}/food-gallery`}>Food Gallery</NavLink>
+          <NavLink to={`/food-gallery`}>Food Gallery</NavLink>
         </li>
       </ul>
     </section>

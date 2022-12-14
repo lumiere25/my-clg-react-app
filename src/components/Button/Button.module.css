@@ -1,14 +1,17 @@
 .button {
   font: inherit;
-  padding: 0.5rem 1.5rem;
-  color: var(--main-bg-color);
-  background-color: var(--main-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  color: rgb(128, 62, 73);
+  background-color: pink;
   margin: 5%;
+  border: 1px solid rgb(179, 136, 143);
 }
 
 .button:hover,
 .button:active {
   color: var(--main-color);
   background: var(--main-bg-color);
-  background-color: var(--main-border-color);
+  background-color: pink;
+  cursor: pointer;
 }
