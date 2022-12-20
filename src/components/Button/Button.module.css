@@ -1,10 +1,11 @@
 .button {
+  display: flex;
   font: inherit;
   padding: 0.8rem 1.5rem;
   border-radius: 20px;
   color: rgb(128, 62, 73);
   background-color: pink;
-  margin: 5%;
+  margin: auto;
   border: 1px solid rgb(179, 136, 143);
 }
 

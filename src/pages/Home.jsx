@@ -1,70 +1,41 @@
-import React, { useCallback, useState, useEffect } from 'react';
-import Button from "../components/Button/Button";
-import BookList from '../components/BookList/BookList';
-import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
+import { useContext } from "react";
+import AuthContext from "../store/auth-context";
 
 const Home = () => {
- const [books, setBooks ] = useState([]);
- const [ error, setError ] = useState(null);
- const [ isLoading, setIsLoading ] = useState(false);
-
- const fetchBookHandler = useCallback(async ()  => {
-   setIsLoading(true);
-   setError(null);
-   
-   try {
-  const response = await fetch("https://openlibrary.org/authors/OL23919A/works.json?limit=10");
-   if( response.status.code === 404) {
-   setError(true);
-   console.log(response);
-   throw new Error("Sorry, something went wrong");
-   }
-   const data = await response.json();
-  
-    const transformedBooks = data.entries.map((bookData) => {
-       return {
-         key: bookData.key,
-         name: bookData.title
-       };
-     });
-     setBooks(transformedBooks);     
- } catch(error) {
-      setError(error.message);
- }
-      setIsLoading(false);
-})
-  
-
- useEffect(() => {
-   fetchBookHandler()
- }, [fetchBookHandler])
-
-let content = <p>No books found!</p>
-
-if(books.length > 0) {
-  content =   <BookList books={books} />
-}
-
-if(error) {
-  content = <p>{error}</p>
-}
-
-if(isLoading) {
-  content = <LoadingSpinner />
-}
+  const { name, isLoggedIn } = useContext(AuthContext);
 
   return (
-   <React.Fragment>
-    <section>
-     <Button onClick={fetchBookHandler()}>
-      Search for J.K Rowling's Work
-     </Button>
+    <section style={{ height: "100vh" }}>
+      {isLoggedIn ? (
+        <h1>Welcome back, {name}</h1>
+      ) : (
+        <h1>Welcome to Chrissa's Website!</h1>
+      )}
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+      <h2>But wait, why do we use Lorem Ipsum?</h2>
+      <p>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. The point of
+        using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable English. Many desktop publishing packages and web
+        page editors now use Lorem Ipsum as their default model text, and a
+        search for 'lorem ipsum' will uncover many web sites still in their
+        infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </p>
     </section>
-    <section>
-    </section>
-    {content}
-   </React.Fragment>
-  )
-}
+  );
+};
 
 export default Home;

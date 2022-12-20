@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Styles from "../components/form/contactFormMessaging.module.css";
 import ContactFormMessaging from "../components/form/ContactFormMessaging";
+// import ContactDetails from '../components/ContactDetails/ContactDetails';
 
 
 const EnquiryForm = () => {
@@ -11,6 +12,7 @@ const [ isSubmitted, setIsSubmitted ] = useState(false);
 const [ isSuccess, setIsSuccess ] = useState(true);
 const [ isValid, setIsValid ] = useState(false);
 const [ message, setMessage ] = useState("");
+
 
 
 function validateForm() {
@@ -31,9 +33,8 @@ const options = [
 
 
   return (
-   <form className={Styles["form_container"]}>
-
-      <div className={Styles["form_content"]}>
+  <form className={Styles["form_container"]}>
+    <div className={Styles["form_content"]}>
       <label className={Styles["form_label_1"]}>
       <div className={Styles["text_name"]}>
        Name
@@ -94,7 +95,7 @@ const options = [
    onClick={() => {
      validateForm()
      setIsSubmitted(true)}}>
-   <div className={Styles["submit"]}>
+   <div className={Styles["submit-button"]}>
   Submit
   </div>  
  </button>

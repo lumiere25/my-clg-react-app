@@ -1,4 +1,6 @@
 .footer_container {
+  position: absolute;
+  right: 0.1rem;
   border: 5px solid rgb(235, 215, 221);
   background-color: rgb(214, 164, 177);
   width: 100%;
@@ -7,7 +9,7 @@
 }
 
 .desc {
- margin-left: 35px;
+ text-align: center;
  color: rgb(253, 237, 237);
  
 

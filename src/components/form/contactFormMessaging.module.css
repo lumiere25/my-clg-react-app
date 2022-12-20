@@ -1,5 +1,5 @@
 .form_container {
-  border: 2px solid rgb(213, 168, 179);
+  border: 2px solid rgb(110, 83, 143);
   border-radius: 15px;
   margin: 70px;
   margin-bottom: 46px;
@@ -14,14 +14,14 @@
 
 .form_content {
   display: flex;
-  border-radius: 15px;
+  border-radius: 8px;
   flex-direction: column;
   padding: 41px 35px;
   width: 30%; 
   align-items: center;
   margin: 15px;
   margin-left: 33%;
-  border: 2px solid rgb(107, 86, 132);
+  border: 2px solid rgb(164, 105, 147);
   background-color: rgb(214, 164, 177);
  }
 
@@ -63,21 +63,27 @@
  }
 
 
- .button {
-   border: 2px solid rgb(107, 86, 132);
-   border-radius: 7px;
-   background-color: rgb(214, 164, 177);
-   padding: 10px 19px;;
-   margin-left: 10px;
-   margin-top: 5px;
+ .submit-button {
+   position: absolute;
+   top: 115%;
+   border: 2px solid rgb(110, 83, 143);
+   border-radius: 8px;
+   background-color: rgb(208, 164, 214);
+   padding: 10px 19px;
+   width: 26%;
+   margin-left: 25%;
+  
  }
 
- .button:hover {
+ .submit-button:hover {
    cursor: pointer;
  }
 
  .submit {
-   color: rgb(75, 54, 54);
+   color: rgb(92, 56, 56);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+   
  }
 
 
