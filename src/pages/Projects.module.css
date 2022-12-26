@@ -1,0 +1,22 @@
+.project_container {
+  text-align: center;
+  border: 2px solid pink;
+  width: 40%;
+  margin: auto;
+  padding: 15px 15px;
+}
+
+.li_texts_1 {
+  list-style: none;
+  margin-right: 29px;
+}
+
+.li_texts_2 {
+  list-style: none;
+  margin-right: 29px;
+}
+
+.p_texts {
+  font-size: 18px;
+  color:rgb(15, 15, 103);
+}

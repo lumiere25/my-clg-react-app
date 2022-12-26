@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import AuthContext from "../store/auth-context";
+import Login from "./Login";
+import styles from "../pages/Home.module.css";
 
 const Home = () => {
   const { name, isLoggedIn } = useContext(AuthContext);
@@ -9,8 +11,12 @@ const Home = () => {
       {isLoggedIn ? (
         <h1>Welcome back, {name}</h1>
       ) : (
-        <h1>Welcome to Chrissa's Website!</h1>
+        <>
+        <h1 className={styles["intro"]}>Welcome to Chrissa's Website!</h1>
+        <Login /> 
+        </>
       )}
+  
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

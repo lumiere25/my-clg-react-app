@@ -1,0 +1,49 @@
+.todo_form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid pink;
+  margin: auto;
+  padding: 20px 10px;
+  width: 40%;
+}
+
+.todo_label {
+  margin: auto;
+  padding: 10px;
+}
+
+.todo_input {
+  margin-top: 8px;
+  padding: 8px;
+  border: 2px solid rgb(154, 51, 154);
+  border-radius: 22px;
+  
+} 
+
+.todo_text {
+  text-align: center;
+  color:rgb(15, 15, 103);
+}
+
+.todo_task {
+  text-align: center;
+  font-size: 22px;
+  color:rgb(15, 15, 103);
+}
+
+.todo_button {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid rgb(128, 97, 103);
+  border-radius: 20px;
+  background-color: rgb(245, 176, 215);
+  cursor: pointer;
+
+}
+
+.checkbox {
+  text-align: center;
+}

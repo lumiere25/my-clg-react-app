@@ -34,3 +34,13 @@
   text-decoration: none;
 }
 
+.onsignup_btn {
+  display: flex;
+  margin-left: 5%;
+  margin-bottom: 5px;
+  padding: 8px 10px;
+  border: 2px solid rgb(176, 123, 132);
+  background-color: pink;
+  border-radius: 14px;
+  cursor: pointer;
+}

@@ -1,6 +1,8 @@
+import styles from "./Checkbox.module.css";
+
 const Checkbox = ({ label, value, checked, onChange }) => {
   return (
-    <label>
+    <label className={styles["checkbox"]}>
      <input
      type="checkbox"
      checked={checked}

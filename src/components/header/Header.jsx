@@ -1,10 +1,10 @@
 import React from 'react';
 import { useContext } from 'react';
-import Button from '../Button/Button';
-import { NavLink, useNavigate } from "react-router-dom";
+// import Button from '../Button/Button';
+import { NavLink, useNavigate, Navigate } from "react-router-dom";
 import AuthContext from '../../store/auth-context';
 import Styles from "./Header.module.css";
-
+import AvatarButton from "../AvatarButton/AvatarButton";
 
 
 const Header = () => {
@@ -28,11 +28,14 @@ let history = useNavigate();
    </li>
    </ul>
    {isLoggedIn && (
-     <Button onClick={() => history.push("/profile")} />
+     <button onClick={() => history("/profile")} />
    )}
    {isLoggedIn && (
-   <Button onClick={() => history.push("/login")}>Sign In</Button>
+   <button className={Styles['onsignup_btn']} onClick={() => history("/login")}>Login</button>
    )}
+   {isLoggedIn && (
+    <AvatarButton onClick={() => history("/profile")} />
+  )}
    </nav>
    </header>
   )

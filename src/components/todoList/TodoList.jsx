@@ -45,12 +45,13 @@ const TodoList = () => {
 
   return (
     <div className="App">
-      <h1>ToDo list</h1>
-      <form onSubmit={addTodos}>
-        <div>
+      <form className={styles["todo_form"]} onSubmit={addTodos}>
+        <div className={styles["todo_label"]}>
           <label>
+          <div className={styles["todo_task"]}>
             Task
-            <input
+            </div>
+            <input className={styles["todo_input"]}
               type="text"
               value={task.taskDescription}
               name="taskDescription"
@@ -62,7 +63,7 @@ const TodoList = () => {
               }
             />
           </label>
-          <button>Add Todo</button>
+          <button className={styles["todo_button"]}>Add Todo</button>
         </div>
       </form>
       <>
@@ -76,7 +77,7 @@ const TodoList = () => {
                       <p>{t.taskDescription}</p>
                     </strike>
                   ) : (
-                    <Checkbox
+                    <Checkbox className={styles["checkbox"]}
                       label={t.taskDescription}
                       value={t.id}
                       checked={t.isCompleted}

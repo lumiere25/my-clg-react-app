@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { ThemeContext } from './components/ThemeProvider';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 
 import './App.css';
 import Header from "./components/header/Header";
@@ -16,6 +16,8 @@ import Profile from './pages/Profile';
 import NotFound from "./pages/NotFound";
 import Footer from "./components/footer/Footer";
 import SwitchButton from './components/ThemeButton';
+
+
 
 
 function App() {
@@ -39,20 +41,20 @@ function App() {
     setIsLoggedIn(true);
     setName(name);
     setEmail(email);
-    history.push("/home");
+    history("/home");
   };
 
   const logOutHandler = () => {
     localStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
-    history.push("/home");
+    history("/home");
   };
 
 
   return (
     <AuthContext.Provider 
  value={{
-   isLoggedIn: false, 
+   isLoggedIn: isLoggedIn, 
    name: name,
    email: email,
    onLogin: loginHandler,

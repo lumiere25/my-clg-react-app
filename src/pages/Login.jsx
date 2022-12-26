@@ -110,8 +110,8 @@ const Login = () => {
         height: "100vh"
       }}
     >
-      <form onSubmit={submitHandler}>
-        <h1>Sign In</h1>
+      <form className={styles["login_container"]} onSubmit={submitHandler}>
+        <h1 className={styles["h1_text"]}>Sign In</h1>
         <div
           className={`${styles.control} ${
             nameState.isValid === false ? styles.invalid : ""
