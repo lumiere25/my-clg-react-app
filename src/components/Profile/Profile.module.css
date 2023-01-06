@@ -1,0 +1,19 @@
+.settings {
+  text-align: center;
+  width: 24%;
+  font-size: 34px;
+  margin-left: 37%;
+  box-shadow: 10px 5px 15px;
+}
+
+.name_setting {
+  text-align: center;
+  font-size: 18px;
+  color:rgb(13, 13, 80);
+}
+
+.email_setting {
+  text-align: center;
+  font-size: 22px;
+  color:rgb(13, 13, 80);
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./todoList.module.css";
 import Checkbox from "../checkbox";
+import broom from "../Assets/broomsweep.jpg";
 
 const TodoList = () => {
   // set initial state
@@ -45,6 +46,9 @@ const TodoList = () => {
 
   return (
     <div className="App">
+     <div className={styles.broom_container}>
+     <img className={styles.broomIcon}src={broom} alt="broomsweep"/>
+     </div>
       <form className={styles["todo_form"]} onSubmit={addTodos}>
         <div className={styles["todo_label"]}>
           <label>

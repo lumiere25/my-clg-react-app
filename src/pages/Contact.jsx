@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Styles from "../components/form/contactFormMessaging.module.css";
 import ContactFormMessaging from "../components/form/ContactFormMessaging";
+import ContactUs from "../components/ContactUs/index";
 // import ContactDetails from '../components/ContactDetails/ContactDetails';
 
 
@@ -32,17 +33,22 @@ const options = [
 ];
 
 
+
+
+
   return (
-  <form className={Styles["form_container"]}>
-    <div className={Styles["form_content"]}>
-      <label className={Styles["form_label_1"]}>
-      <div className={Styles["text_name"]}>
+   
+  <form className={Styles.form_container}>
+  <ContactUs/>
+    <div className={Styles.form_content}>
+      <label className={Styles.form_label_1}>
+      <div className={Styles.text_name}>
        Name
        </div>
       <input type="text" onChange={(e) => setName(e.target.value)} />
       </label>
-      <label className={Styles["form_label_2"]}>
-      <div className={Styles["text_email"]}>
+      <label className={Styles.form_label_2}>
+      <div className={Styles.text_email}>
        Email
        </div>
        <input type="text" onChange={(e) => {
@@ -51,10 +57,10 @@ const options = [
        />
       </label>
       <label>
-      <div className={Styles["text_info"]}>
+      <div className={Styles.text_info}>
       What would you like to chat about?
       </div>
-      <select className={Styles["select"]}
+      <select className={Styles.select}
       value={selectedService} 
       onChange={(e)  => 
     setSelectedService(e.target.value)}
@@ -78,18 +84,18 @@ const options = [
       </select>
    </label>
    <label>
-   <div className={Styles["message"]}>
+   <div className={Styles.message}>
    Message
    </div>
    </label>
-   <textarea className={Styles["text_info_message"]}
+   <textarea className={Styles.text_info_message}
     name="Message"
     cols="40"
     rows="5"
     onChange={(e) => setMessage(e.target.value)} 
    ></textarea>
    </div>
-   <button className={Styles["button"]}
+   <button className={Styles.button}
 
    type="button"
    onClick={() => {

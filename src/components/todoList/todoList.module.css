@@ -47,3 +47,15 @@
 .checkbox {
   text-align: center;
 }
+
+.broom_container {
+ display: inline-block;
+}
+
+.broomIcon {
+  position: absolute;
+  height: 180px;
+  width: 130px;
+  margin-left: 75%;
+  
+}

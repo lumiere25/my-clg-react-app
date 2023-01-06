@@ -1,0 +1,42 @@
+.contactus_container {
+  border: 5px solid rgb(15, 15, 144);
+  border-radius: 10px;
+  background-color: rgb(55, 122, 181);
+  height: 110%;
+  width: 40%;
+  float: left;
+  margin-left: 90px;
+  margin-top: 70px;
+}
+
+.contactus_container p {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(239, 239, 239);
+}
+
+.contactus_container h3 {
+  text-align: center;
+  padding: 5px;
+  color: rgb(100, 48, 48);
+}
+
+.contact_heading {
+ text-align: center;
+ font-size: 28px;
+ color: rgb(239, 239, 239);
+
+}
+
+.contactus_container_2 {
+  background-color: rgb(37, 91, 137);
+  border-radius: 8px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.contactus_container_2 p {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}

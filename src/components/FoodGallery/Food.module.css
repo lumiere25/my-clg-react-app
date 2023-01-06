@@ -1,0 +1,38 @@
+.items_container {
+ text-align: center;
+}
+
+.items_container ul {
+  list-style-type: none;
+}
+.images {
+  height: 200px;
+  width: 330px;
+  border: 5px solid pink;
+  border-radius: 90%;
+  margin-bottom: 8%;
+  box-shadow: 24px 10px 5px;
+
+}
+
+.list_items_text {
+  display: flex;
+}
+
+.ul_texts {
+  font-size: 19px;
+  color: rgb(156, 45, 64);
+}
+
+.intro_text {
+  text-align: center;
+  width: 29%;
+  font-size: 34px;
+  margin-left: 35%;
+  box-shadow: 10px 5px 15px;
+}
+
+.desc_text {
+  text-align: center;
+  margin-left: 22px;
+}

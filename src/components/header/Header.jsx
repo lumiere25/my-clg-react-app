@@ -4,13 +4,16 @@ import { useContext } from 'react';
 import { NavLink, useNavigate, Navigate } from "react-router-dom";
 import AuthContext from '../../store/auth-context';
 import Styles from "./Header.module.css";
+import Button from "../BasicButton/BasicButton";
 import AvatarButton from "../AvatarButton/AvatarButton";
 
 
+
 const Header = () => {
-const { isLoggedIn } = useContext(AuthContext);
+const { isLoggedIn, } = useContext(AuthContext);
 let history = useNavigate();
-  return (
+ 
+return (
     <header className={Styles.header}>
    <nav>
    <ul>
@@ -28,15 +31,13 @@ let history = useNavigate();
    </li>
    </ul>
    {isLoggedIn && (
-     <button onClick={() => history("/profile")} />
-   )}
-   {isLoggedIn && (
-   <button className={Styles['onsignup_btn']} onClick={() => history("/login")}>Login</button>
-   )}
-   {isLoggedIn && (
     <AvatarButton onClick={() => history("/profile")} />
   )}
-   </nav>
+
+   {isLoggedIn && (
+    <Button onClick={() => history("/home")}>Log Out</Button>
+   )}
+     </nav>
    </header>
   )
 }

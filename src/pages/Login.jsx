@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useReducer, useContext } from "react";
 import AuthContext from "../store/auth-context";
 import styles from "../components/Login/Login.module.css";
-import Button from "../components/Button/Button";
+import Button from "../components/BasicButton/BasicButton";
 
 const nameReducer = (state, action) => {
   if (action.type === "USER_INPUT") {

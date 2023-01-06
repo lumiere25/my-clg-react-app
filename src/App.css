@@ -1,7 +1,5 @@
 .bg-theme {
   height: 100vh;
-  padding: 50px;
-  overflow: hidden;
   transition: 0.2s all linear;
 }
 

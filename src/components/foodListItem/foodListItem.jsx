@@ -1,17 +1,19 @@
+import styles from "../FoodGallery/Food.module.css";
+
 function FoodListItem(props) {
   return (
-    <div>
+    <div className={styles["items_container"]}>
     {
-      props.foodData.haveTried && (<h1>Absolutely!</h1>)
+      !props.foodData.haveTried && (<h1 className={styles["desc_text"]}>Must Try!</h1>)
     }
 
-      <ul>
+      <ul className={styles["ul_texts"]}>
        <li>{props.foodData.title} is delicious.
-       {props.foodData.rating && (<h2>No Rating</h2>)}
-       I give it a rating of {props.foodData.rating}.
+       {props.foodData.rating > 0 ? `${props.foodData.rating}/5` : `No Rating`}
+
        <p>{props.foodData.description}. </p>
   
-      <img src={props.foodData.image} alt="lasagna"/>
+      <img className={styles["images"]} src={props.foodData.image} alt="some yummy food right here"/>
        </li>
     </ul>
   </div>
