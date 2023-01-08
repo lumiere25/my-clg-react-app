@@ -21,8 +21,8 @@
   align-items: center;
   margin: 15px;
   margin-left: 50%;
-  border: 5px solid rgb(164, 105, 147);
-  background-color: rgb(214, 164, 177);
+  border: 2px solid rgb(218, 160, 202);
+  background: linear-gradient( to right, rgb(210, 160, 202), rgb(34, 135, 172));
  }
 
  .text_name {

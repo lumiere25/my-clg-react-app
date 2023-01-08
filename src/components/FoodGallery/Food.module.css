@@ -1,5 +1,12 @@
 .items_container {
  text-align: center;
+ border: 3px solid rgb(225, 63, 163);
+ border-radius: 25px;
+ background: linear-gradient( to left, rgb(227, 158, 200), rgba(118, 58, 25, 0.403));
+ width: 90%;
+ margin: auto;
+ /* box-shadow: 20px 20px 20px 20px rgb(212, 113, 113); */
+ margin-top: 20px;
 }
 
 .items_container ul {
@@ -28,7 +35,7 @@
   text-align: center;
   width: 29%;
   font-size: 34px;
-  margin-left: 35%;
+  margin-left: 37%;
   box-shadow: 10px 5px 15px;
 }
 

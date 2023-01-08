@@ -49,13 +49,13 @@ const TodoList = () => {
      <div className={styles.broom_container}>
      <img className={styles.broomIcon}src={broom} alt="broomsweep"/>
      </div>
-      <form className={styles["todo_form"]} onSubmit={addTodos}>
-        <div className={styles["todo_label"]}>
+      <form className={styles.todo_form} onSubmit={addTodos}>
+        <div className={styles.todo_label}>
           <label>
-          <div className={styles["todo_task"]}>
+          <div className={styles.todo_task}>
             Task
             </div>
-            <input className={styles["todo_input"]}
+            <input className={styles.todo_input}
               type="text"
               value={task.taskDescription}
               name="taskDescription"
@@ -67,7 +67,7 @@ const TodoList = () => {
               }
             />
           </label>
-          <button className={styles["todo_button"]}>Add Todo</button>
+          <button className={styles.todo_button}>Add Todo</button>
         </div>
       </form>
       <>
@@ -81,7 +81,7 @@ const TodoList = () => {
                       <p>{t.taskDescription}</p>
                     </strike>
                   ) : (
-                    <Checkbox className={styles["checkbox"]}
+                    <Checkbox className={styles.checkbox}
                       label={t.taskDescription}
                       value={t.id}
                       checked={t.isCompleted}

@@ -12,7 +12,8 @@ import AvatarButton from "../AvatarButton/AvatarButton";
 const Header = () => {
 const { isLoggedIn, } = useContext(AuthContext);
 let history = useNavigate();
- 
+
+
 return (
     <header className={Styles.header}>
    <nav>
@@ -29,14 +30,15 @@ return (
    <li>
    <NavLink className={Styles.active}to="/contact">Contact</NavLink>
    </li>
+   <li>
+   <NavLink className={Styles.active}to="/signup">Sign In</NavLink>
+   </li>
    </ul>
    {isLoggedIn && (
     <AvatarButton onClick={() => history("/profile")} />
   )}
 
-   {isLoggedIn && (
-    <Button onClick={() => history("/home")}>Log Out</Button>
-   )}
+   
      </nav>
    </header>
   )

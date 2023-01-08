@@ -1,6 +1,3 @@
-import { useContext } from "react";
-import AuthContext from "../store/auth-context";
-import Login from "./Login";
 import styles from "../pages/Home.module.css";
 import dog from "../components/Assets/dog.jpg";
 import beach from "../components/Assets/beach.jpg";
@@ -8,21 +5,14 @@ import house from "../components/Assets/home.jpg";
 
 
 const Home = () => {
-  const { name, isLoggedIn, } = useContext(AuthContext);
 
-  return (
-    <section style={{ height: "100vh" }}>
-      {isLoggedIn ? (
-        <h1 className={styles.welcome}>Welcome back, {name}</h1>
-      ) : (
-        <>
-        <h1 className={styles.intro}>Welcome to Chrissa's Website!</h1>
-        <Login /> 
-        </>
-      )}
-
+return(
       
       <>
+      <section>
+      <div className={styles.intro_one}>
+       <p>Find your special place</p>
+      </div>
      <div className={styles.images_container}>
      <div>
      <img className={styles.card_1} src={beach} alt="name"/>
@@ -37,7 +27,7 @@ const Home = () => {
      <p className={styles.card_text_3}>Immerse yourself in calm, wonder and delight your senses along the beach</p>
      </div>
      </div>   
-     </>
+    
   
      <div className={styles.content_container}>
       <h2 className={styles.home_heading}>Home is where the heart is</h2>
@@ -54,6 +44,8 @@ const Home = () => {
       </p>
       </div>
     </section>
+
+    </>
   );
 };
 

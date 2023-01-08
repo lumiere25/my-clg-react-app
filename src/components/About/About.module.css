@@ -1,5 +1,4 @@
 .about_container {
-  border: 2px solid pink;
   width: 50%;
   margin: auto;
   margin-top: 139px;
@@ -8,22 +7,32 @@
 }
 
 .about_container h1 {
-  font-size: 18px;
   text-align: center;
+  border: 2px solid pink;
+  border-radius: 18px;
+  width: 79%;
+  margin-left: 11%;
+  font-family: 'inter';
+  background: linear-gradient(to right, rgb(225, 142, 195), rgb(0, 48, 143));
+  color: rgb(229, 214, 214);
+  font-size: 22px;
 }
 
 .about_container p {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  margin: auto;
-  /* padding: 5px 10px; */
   text-align: center;
-  width: 65%;
+  margin-bottom: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 100%;
+  color: rgb(74, 13, 74);
+
 }
+
+
 
 .about_img {
   position: absolute;
-  top: 219px;
+  top: 260px;
   display: inline-block;
   height:90px;
   width: 79px;

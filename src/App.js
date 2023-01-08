@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useContext, createContext } from 'react';
 import { ThemeContext } from './components/ThemeProvider';
 import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import SignUp from './pages/SignUp';
+import styles from "./components/BasicButton/Button.module.css";
+import PrivateRoutes from './privateRoutes';
 
 // import AuthContextProvider from './store/auth-context';
 
@@ -13,6 +16,7 @@ import Projects from "./pages/Projects";
 import Login from './pages/Login';
 import FoodGallery from './pages/FoodGallery';
 import TodoListPage from "./pages/todoList";
+import Book from './pages/Book';
 import AuthContext from './store/auth-context';
 
 
@@ -21,6 +25,7 @@ import Profile from './pages/Profile';
 import NotFound from "./pages/NotFound";
 import Footer from "./components/footer/Footer";
 import SwitchButton from './components/ThemeButton';
+import ProtectedRoutes from './privateRoutes';
 
 
 
@@ -53,8 +58,7 @@ export default function App() {
   const logoutHandler = () => {
     localStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
-    console.log("I'm logged out");
-    history("/home");
+    history("/signup");
    };
   
 return (
@@ -74,29 +78,30 @@ return (
     <p className={`para ${darkMode ? "para-dark" : "para-light"}`}>
     </p>
     <Header/>
+    {isLoggedIn && (
+      <button className={styles.button} onClick={logoutHandler}>Log Out</button>
+    )}
     <main>
 
     <Routes>
+    <Route path="/signup" element={<SignUp />} />
+    <Route element ={<PrivateRoutes />}>
     <Route path="/home" className="active" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/projects" element={ <Projects />} />
     <Route path="/food-gallery" element={<FoodGallery />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="/todo-app" element={<TodoListPage />} />
-    {!isLoggedIn && (
+    <Route path="/books" element={<Book />} />
+
+    {isLoggedIn && (
       <Route path="/login" element= {<Login />} />
     )}
-
-   
-
     {isLoggedIn && (
       <Route path="/profile" element={<Profile />}/>
     )}
-
-
-
-
     <Route path="*" element={<NotFound />} />
+    </Route>
     </Routes>
    </main>
   <Footer/>

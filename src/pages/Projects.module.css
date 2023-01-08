@@ -7,14 +7,27 @@
 }
 
 .li_texts_1 {
+  font-size: 16px;
   list-style: none;
+  text-decoration: none;
   margin-right: 29px;
 }
 
 .li_texts_2 {
+  font-size: 16px;
   list-style: none;
+  text-decoration: none;
   margin-right: 29px;
 }
+
+.li_texts_3 {
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 29px;
+}
+
+
 
 .p_texts {
   font-size: 18px;

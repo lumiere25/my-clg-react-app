@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useEffect } from 'react';
-import Button from "../components/Button/Button";
+import Button from "../components/BasicButton/BasicButton";
 import BookList from '../components/BookList/BookList';
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 
@@ -63,7 +63,7 @@ if(isLoading) {
    <React.Fragment>
     <section>
      <Button onClick={fetchBookHandler}>
-      Search for J.K Rowling's Work
+      J.K Rowling's Work
      </Button>
     </section>
     <section>

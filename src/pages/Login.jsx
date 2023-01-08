@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useReducer, useContext } from "react";
 import AuthContext from "../store/auth-context";
 import styles from "../components/Login/Login.module.css";
-import Button from "../components/BasicButton/BasicButton";
+// import Button from "../components/BasicButton/BasicButton";
 
 const nameReducer = (state, action) => {
   if (action.type === "USER_INPUT") {
@@ -170,12 +170,12 @@ const Login = () => {
           </span>
         )}
         <div className={styles.actions}>
-          <Button
+          <button className={styles.btn_signin}
             type="submit"
             disabled={!formIsValid | (formIsValid === false)}
           >
             Sign In
-          </Button>
+          </button>
         </div>
         {error && (
           <span className={styles["validation-message"]}>
