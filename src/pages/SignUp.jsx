@@ -11,7 +11,7 @@ const SignUp = () => {
   return (
     <section style={{ height: "100vh" }}>
       {isLoggedIn ? (
-        <h1 className={styles.welcome}>Welcome back!! {name}</h1>
+        <h1 className={styles.welcome}>Welcome back! {name}</h1>
       ) : (
         <>
         <h1 className={styles.intro}>Welcome to Chrissa's Website!</h1>
