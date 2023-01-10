@@ -1,7 +1,7 @@
 import styles from "../FoodGallery/Food.module.css";
 
 function FoodListItem(props) {
-  return (
+   return (
     <div className={styles.items_container}>
     {
       !props.foodData.haveTried && (<h1 className={styles.desc_text}>Must Try!</h1>)

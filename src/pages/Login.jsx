@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useReducer, useContext } from "react";
-import AuthContext from "../store/auth-context";
+import React, { useState, useEffect, useReducer } from "react";
+// import AuthContext from "../store/auth-context";
+import useAuth from "../store/useAuth";
 import styles from "../components/Login/Login.module.css";
 // import Button from "../components/BasicButton/BasicButton";
 
@@ -37,10 +38,11 @@ const passwordReducer = (state, action) => {
 };
 
 const Login = () => {
+  const { setAuth }= useAuth();
   const [formIsValid, setFormIsValid] = useState(false);
   const [error, setError] = useState(null);
 
-  const { onLogin } = useContext(AuthContext);
+  const { onLogin } = useAuth();
 
   const [nameState, dispatchName] = useReducer(nameReducer, {
     value: "",

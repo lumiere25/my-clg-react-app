@@ -1,4 +1,4 @@
-import styles from "../pages/Home.module.css";
+import styles from "../components/Home/Home.module.css";
 import dog from "../components/Assets/dog.jpg";
 import beach from "../components/Assets/beach.jpg";
 import house from "../components/Assets/home.jpg";

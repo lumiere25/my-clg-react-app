@@ -1,11 +1,18 @@
-import React, { useState, useEffect, useContext, createContext } from 'react';
+
+// useState sets the current state and updates the state of a component.
+
+//useEffect creates a side effect, we notify React that our component needs to do something after it renders.
+
+//usecontext reads and subscribes to context.
+//Context gives us the ability to pass data through the component tree without having to pass props down manually at every level.
+import React, { useState, useEffect, useContext, } from 'react';
 import { ThemeContext } from './components/ThemeProvider';
-import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import {  Route, Routes, useNavigate } from 'react-router-dom';
 import SignUp from './pages/SignUp';
 import styles from "./components/BasicButton/Button.module.css";
-import PrivateRoutes from './privateRoutes';
+import ProtectedRoute from './protectedRoutes';
 
-// import AuthContextProvider from './store/auth-context';
+
 
 import './App.css';
 import Header from "./components/header/Header";
@@ -20,25 +27,27 @@ import Book from './pages/Book';
 import AuthContext from './store/auth-context';
 
 
-// import Logout from './pages/Logout';
 import Profile from './pages/Profile';
 import NotFound from "./pages/NotFound";
 import Footer from "./components/footer/Footer";
 import SwitchButton from './components/ThemeButton';
-import ProtectedRoutes from './privateRoutes';
+
 
 
 
 
 export default function App() {
+
   const theme = useContext(ThemeContext);
   const darkMode = theme.darkMode
   let history = useNavigate();
 
+  // Here we define the the current and updated state.
   const [ isLoggedIn, setIsLoggedIn, ] = useState(false);
   const [ name, setName ] = useState("");
   const [ email, setEmail ] = useState("");
   
+  // The useEffect hook creates a side effect that determines if a user is authenticated.
   useEffect(() => {
     const storedUserLoggedInInformation = localStorage.getItem("isLoggedIn");
 
@@ -46,6 +55,10 @@ export default function App() {
       setIsLoggedIn(true);
     }
   }, []);
+
+
+
+  // loginHandler checks for an email.
  
   const loginHandler = (email, password, name) => {
     localStorage.setItem("isLoggedIn", "1");
@@ -55,6 +68,7 @@ export default function App() {
     history("/home");
   };
 
+  // logoutHandler executes on button click
   const logoutHandler = () => {
     localStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
@@ -83,10 +97,12 @@ return (
     )}
     <main>
 
+    {/* Routes that link to our navigation*/}
     <Routes>
     <Route path="/signup" element={<SignUp />} />
-    <Route element ={<PrivateRoutes />}>
+    {/* Here we want to protect our Routes */}
     <Route path="/home" className="active" element={<Home />} />
+  
     <Route path="/about" element={<About />} />
     <Route path="/projects" element={ <Projects />} />
     <Route path="/food-gallery" element={<FoodGallery />} />
@@ -101,7 +117,6 @@ return (
       <Route path="/profile" element={<Profile />}/>
     )}
     <Route path="*" element={<NotFound />} />
-    </Route>
     </Routes>
    </main>
   <Footer/>

@@ -1,7 +1,7 @@
 import Login from "./Login";
 import { useContext } from "react";
 import AuthContext from "../store/auth-context";
-import styles from "../pages/Home.module.css";
+import styles from "../components/Home/Home.module.css";
 
 
 

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import styles from "./todoList.module.css";
-import Checkbox from "../checkbox";
-import broom from "../Assets/broomsweep.jpg";
+  import React, { useState } from "react";
+  import styles from "./todoList.module.css";
+  import Checkbox from "../checkbox";
+  import broom from "../Assets/broomsweep.jpg";
 
-const TodoList = () => {
+  const TodoList = () => {
   // set initial state
   const [task, setTask] = useState({
     id: 0,
@@ -45,24 +45,24 @@ const TodoList = () => {
   };
 
   return (
-    <div className="App">
-     <div className={styles.broom_container}>
-     <img className={styles.broomIcon}src={broom} alt="broomsweep"/>
-     </div>
-      <form className={styles.todo_form} onSubmit={addTodos}>
-        <div className={styles.todo_label}>
-          <label>
-          <div className={styles.todo_task}>
-            Task
-            </div>
-            <input className={styles.todo_input}
-              type="text"
-              value={task.taskDescription}
-              name="taskDescription"
-              onChange={(event) =>
-                setTask({
-                  taskDescription: event.target.value,
-                  isCompleted: false
+<div className="App">
+ <div className={styles.broom_container}>
+  <img className={styles.broomIcon}src={broom} alt="broomsweep"/>
+   </div>
+    <form className={styles.todo_form} onSubmit={addTodos}>
+     <div className={styles.todo_label}>
+      <label>
+        <div className={styles.todo_task}>
+          Task
+          </div>
+          <input className={styles.todo_input}
+           type="text"
+           value={task.taskDescription}
+           name="taskDescription"
+           onChange={(event) =>
+              setTask({
+              taskDescription: event.target.value,
+                isCompleted: false
                 })
               }
             />
