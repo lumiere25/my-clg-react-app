@@ -1,16 +1,16 @@
 // import React from 'react';
  // Here we call in the isLoggedIn state and it gets passed in as props,in our return we define the logic for when the content is hidden or displayed whether a user is logged in or logged out.
-  const ProtectedRoute = (props) => {
-  const { isloggedIn } = props;
-  const token = isloggedIn ? true : false;
+//   const ProtectedRoute = (props) => {
+//   const { isloggedIn } = props;
+//   const token = isloggedIn ? true : false;
  
-  return (
-    <>
+//   return (
+//     <>
      
-    </>
-  )
+//     </>
+//   )
     
-export default ProtectedRoute;
+// export default ProtectedRoute;
 
 
 
