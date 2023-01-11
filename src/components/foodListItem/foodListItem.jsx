@@ -1,6 +1,8 @@
 import styles from "../FoodGallery/Food.module.css";
 
-function FoodListItem(props) {
+//Here we are passing our data as props to fill in our images and descriptions.
+// We are attaching our styles variable that is connected to our stylesheet to the item we want to style.
+ function FoodListItem(props) {
    return (
     <div className={styles.items_container}>
     {
@@ -15,7 +17,7 @@ function FoodListItem(props) {
   
       <img className={styles.images} src={props.foodData.image} alt="some yummy food right here"/>
        </li>
-    </ul>
+     </ul>
   </div>
   )
 }

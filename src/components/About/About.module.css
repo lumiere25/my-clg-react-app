@@ -38,8 +38,40 @@
   width: 79px;
   border-radius: 50%;
   padding: 10px;
-  /* margin-bottom: 2px; */
   border: 2px solid pink;
   margin-left: 45%;
   box-shadow: 8px 8px 4px rgb(13, 13, 54);
 }
+
+/* Media Queries */
+
+
+@media (min-width: 480px) {
+  .about_img {
+   margin-left: 40%;
+  }
+}
+
+
+@media (min-width: 580px) {
+  .about_img {
+   margin-left: 44%;
+  }
+}
+
+@media (min-width: 680px) {
+  .about_img {
+   margin-left: 46%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

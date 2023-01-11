@@ -7,7 +7,7 @@
         </div>
         <div className={styles.contactus_container}>
         <h1 className={styles.contact_heading}>Contact Us</h1>
-        <p>We look forward to hearing from you.</p>
+       <p>We look forward to hearing from you.</p>
       <h3>Phone: 1595 678 889</h3>
       <h3>Email: stylingworks@gmail.com</h3>
     <p>Alternatively, fill the form and we will get back to you as soon as possible.</p>

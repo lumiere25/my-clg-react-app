@@ -20,3 +20,36 @@
   background-color: pink;
   cursor: pointer;
 }
+
+/* media queries */
+
+@media (min-width: 480px) {
+  .button {
+   margin-left: 43%;
+  }
+}
+
+
+@media (min-width: 510px) {
+  .button {
+   margin-left: 46%;
+  }
+}
+
+@media (min-width: 710px) {
+  .button {
+   margin-left: 48%;
+  }
+}
+
+@media (min-width: 870px) {
+  .button {
+   margin-left: 48%;
+  }
+}
+
+@media (min-width: 900px) {
+  .button {
+   margin-left: 47%;
+  }
+}

@@ -10,7 +10,7 @@ import { ThemeContext } from './components/ThemeProvider';
 import {  Route, Routes, useNavigate } from 'react-router-dom';
 import SignUp from './pages/SignUp';
 import styles from "./components/BasicButton/Button.module.css";
-import ProtectedRoute from './protectedRoutes';
+
 
 
 
@@ -42,7 +42,7 @@ export default function App() {
   const darkMode = theme.darkMode
   let history = useNavigate();
 
-  // Here we define the the current and updated state.
+  // Here we define the current and updated state.
   const [ isLoggedIn, setIsLoggedIn, ] = useState(false);
   const [ name, setName ] = useState("");
   const [ email, setEmail ] = useState("");
@@ -58,7 +58,7 @@ export default function App() {
 
 
 
-  // loginHandler checks for an email.
+  // loginHandler checks to see if 
  
   const loginHandler = (email, password, name) => {
     localStorage.setItem("isLoggedIn", "1");

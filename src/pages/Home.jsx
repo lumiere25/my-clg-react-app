@@ -2,32 +2,33 @@ import styles from "../components/Home/Home.module.css";
 import dog from "../components/Assets/dog.jpg";
 import beach from "../components/Assets/beach.jpg";
 import house from "../components/Assets/home.jpg";
+import { useContext } from "react";
+import  AuthContext from "../store/auth-context";
 
 
 const Home = () => {
 
+
 return(
-      
-      <>
-      <section>
-      <div className={styles.intro_one}>
-       <p>Find your special place</p>
-      </div>
-     <div className={styles.images_container}>
-     <div>
-     <img className={styles.card_1} src={beach} alt="name"/>
-     <p className={styles.card_text}>Immerse yourself in calm, wonder and delight your senses along the beach</p>
-     </div>
-     <div>
+   <>
+   <section>
+  <div className={styles.intro_one}>
+     <p>Find your special place</p>
+    </div>
+      <div className={styles.images_container}>
+       <div>
+       <img className={styles.card_1} src={beach} alt="name"/>
+         <p className={styles.card_text}>Immerse yourself in calm, wonder and delight your senses along the beach</p>
+        </div>
+       <div>
      <img className={styles.card_2} src={dog} alt="name"/>
-     <p className={styles.card_text}>Immerse yourself in calm, wonder and delight your senses along the beach</p>
+    <p className={styles.card_text}>Immerse yourself in calm, wonder and delight your senses along the beach</p>
      </div>
      <div>
      <img className={styles.card_3}src={house} alt="name"/>
      <p className={styles.card_text_3}>Immerse yourself in calm, wonder and delight your senses along the beach</p>
      </div>
      </div>   
-    
   
      <div className={styles.content_container}>
       <h2 className={styles.home_heading}>Home is where the heart is</h2>
@@ -46,7 +47,9 @@ return(
     </section>
 
     </>
-  );
-};
+    );
+  };
+
+
 
 export default Home;

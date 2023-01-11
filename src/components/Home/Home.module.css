@@ -62,7 +62,7 @@ display: flex;
   text-align: center;
   color: #fff;
   width: 40%;
-  margin-left: 33%;
+  margin-left: 26%;
 }
 
 .card_text_3 {
@@ -70,7 +70,7 @@ display: flex;
   text-align: center;
   color: #fff;
   width: 40%;
-  margin-left: 33%;
+  margin-left: 26%;
 }
 
 
@@ -117,4 +117,155 @@ display: flex;
   margin: auto;
   background: linear-gradient(to left, rgb(6, 61, 106), rgb(207, 8, 134));
   color: rgb(228, 224, 224);
+}
+
+/* Media Queries */
+
+
+@media (min-width: 708px) {
+  .card_1 {
+    display: flex;
+    flex-direction: column;
+   margin-left: 2%;
+  }
+}
+
+
+@media (min-width: 708px) {
+  .card_2 {
+    display: flex;
+    flex-direction: column;
+   margin-left: 10%;
+  }
+}
+
+
+@media (min-width: 708px) {
+  .card_3 {
+   margin-left: 1%;
+  }
+}
+
+@media (min-width: 714px) {
+  .card_1 {
+   margin-right: 0%;
+  }
+}
+
+
+@media (min-width: 714px) {
+  .card_2 {
+   margin-left: 1%;
+  }
+}
+
+
+@media (min-width: 714px) {
+  .card_3 {
+   margin-left: 1%;
+  }
+}
+
+
+
+@media (min-width: 753px) {
+  .card_1 {
+   margin-right: 0%;
+  }
+}
+
+
+@media (min-width: 753px) {
+  .card_1 {
+   margin-left: 1%;
+  }
+}
+
+
+@media (min-width: 753px) {
+  .card_3 {
+   margin-left: 1%;
+  }
+}
+
+
+@media (min-width: 763px) {
+  .card_2 {
+   margin-left: 10%;
+  }
+}
+
+
+@media (min-width: 763px) {
+  .card_3 {
+   margin-left: 15%;
+  }
+}
+
+
+@media (min-width: 763px) {
+  .card_1 {
+   margin-right: 10%;
+  }
+}
+
+
+@media (min-width: 763px) {
+  .card_2 {
+   margin-left: 10%;
+  }
+}
+
+
+@media (min-width: 763px) {
+  .card_3 {
+   margin-left: 15%;
+  }
+}
+
+@media (min-width: 873px) {
+  .card_1 {
+   margin-left: 16%;
+  }
+}
+
+
+@media (min-width: 873px) {
+  .card_2 {
+   margin-left: 17%;
+  }
+}
+
+
+@media (min-width: 873px) {
+  .card_3 {
+   margin-left: 15%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .card_1 {
+   margin-left: 20%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .card_2 {
+   margin-left: 22%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .card_3 {
+   margin-left: 20%;
+  }
+}
+
+@media (min-width: 753px) {
+  .images_container {
+  padding-left: 15px 15px;
+  }
 }

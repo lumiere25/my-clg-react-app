@@ -1,9 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../components/Projects/Projects.module.css";
+// import { useContext } from "react";
+// import AuthContext from "../store/auth-context";
 
 const Projects = () => {
- 
+  // const { name, isLoggedIn, } = useContext(AuthContext); 
 
   return (
     <section className={styles.project_container}>

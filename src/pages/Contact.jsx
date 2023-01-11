@@ -2,10 +2,14 @@ import { useState } from "react";
 import Styles from "../components/form/contactFormMessaging.module.css";
 import ContactFormMessaging from "../components/form/ContactFormMessaging";
 import ContactUs from "../components/ContactUs/index";
+// import { useContext } from "react";
+// import AuthContext from "../store/auth-context";
 // import ContactDetails from '../components/ContactDetails/ContactDetails';
 
 
 const EnquiryForm = () => {
+  // const { isLoggedIn, } = useContext(AuthContext); 
+
 const [ name, setName ] = useState("");
 const [ email, setEmail ] = useState("");
 const [ selectedService, setSelectedService ] = useState("");

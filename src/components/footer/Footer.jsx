@@ -3,8 +3,8 @@
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-const Footer = () => {
-  return (
+  const Footer = () => {
+    return (
     <div className={Styles["footer_container"]}>
     <div className={Styles['desc']}>
     <h2>Website powered by Chrissa Hanna</h2>
@@ -23,7 +23,7 @@ const Footer = () => {
     <FontAwesomeIcon className={Styles.icon_4} icon={faTwitter}/>
     </a>
     </div>
-     </div>
+    </div>
   )
 }
 
